@@ -31,8 +31,6 @@ public class Generador {
 
             JRDataSource datasource = new JRBeanArrayDataSource(lista.toArray());
             
-            String report = "C:\\Users\\Manfredi\\Desktop\\InfromeVentaTotales.jasper";
-            
             print = JasperFillManager.fillReport(rutaInforme, param,datasource);
             JasperExportManager.exportReportToPdfFile(print,nombreInformeSalida);
             JasperViewer.viewReport(print);
