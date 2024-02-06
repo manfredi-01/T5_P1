@@ -30,6 +30,9 @@ public class Generador {
             param.put("fecha", LocalDate.now().toString());
 
             JRDataSource datasource = new JRBeanArrayDataSource(lista.toArray());
+            
+            String report = "C:\\Users\\Manfredi\\Desktop\\InfromeVentaTotales.jasper";
+            
             print = JasperFillManager.fillReport(rutaInforme, param,datasource);
             JasperExportManager.exportReportToPdfFile(print,nombreInformeSalida);
             JasperViewer.viewReport(print);

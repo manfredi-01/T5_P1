@@ -9,6 +9,7 @@ import ies.torredelrey.controlador.DocumentJpaController;
 import ies.torredelrey.controlador.OrdersJpaController;
 import ies.torredelrey.controlador.PositionsJpaController;
 import ies.torredelrey.controlador.ProductJpaController;
+import ies.torredelrey.generador.Generador;
 import javax.crypto.AEADBadTagException;
 import javax.persistence.Entity;
 import javax.persistence.EntityManagerFactory;
